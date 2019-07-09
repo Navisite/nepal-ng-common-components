@@ -49,7 +49,8 @@ export class DashboardExamplesComponent implements OnInit {
         { label: 'Vulnerability Summary', icon: 'ui-icon-vertical-align-top', value: { id: 2, name: 'Vulnerability Summary', code: 'VS' }}
     ];
 
-    public mockTreeMap: any = [
+    public mockTreeMap: any = {
+      data: [
         {
             id: '1',
             name: 'High',
@@ -83,7 +84,8 @@ export class DashboardExamplesComponent implements OnInit {
             value: 3,
             className: 'low'
         }
-    ];
+      ]
+    };
     public semiCircleData = {
         title: '',
         series: [{

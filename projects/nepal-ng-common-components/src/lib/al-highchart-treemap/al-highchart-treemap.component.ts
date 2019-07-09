@@ -29,7 +29,7 @@ export class AlHighchartTreeMapComponent implements OnInit {
       },
       series: [{
         type: 'treemap',
-        layoutAlgorithm: 'strip',
+        layoutAlgorithm: this.config.layoutAlgorithm || 'strip',
         levels: [{
           level: 1,
           dataLabels: {
@@ -51,7 +51,7 @@ export class AlHighchartTreeMapComponent implements OnInit {
             return this.value;
           },
         },
-        data: this.config,
+        data: this.config.data,
       }],
       credits: {
         enabled: false

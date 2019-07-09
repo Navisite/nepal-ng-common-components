@@ -110,41 +110,43 @@ export class HighChartsComponent implements OnInit {
         }]
     };
 
-    public mockTreeMap: any = [
-        {
-            id: '1',
-            name: 'High',
-            color: '#EF534F'
-        }, {
-            id: '2',
-            name: 'Medium',
-            color: '#FFB840'
-        }, {
-            id: '3',
-            name: 'Info',
-            color: '#EDEDED'
-        }, {
-            id: '4',
-            name: 'Low',
-            color: '#FFDB6B'
-        }, {
-            name: '6',
-            parent: '1',
-            value: 6,
-        }, {
-            name: 'B',
-            parent: '2',
-            value: 5,
-        }, {
-            name: 'C',
-            parent: '3',
-            value: 4,
-        }, {
-            name: 'D',
-            parent: '4',
-            value: 3,
-        }
-    ];
+    public mockTreeMap: any = {
+        data: [
+            {
+                id: '1',
+                name: 'High',
+                color: '#EF534F'
+            }, {
+                id: '2',
+                name: 'Medium',
+                color: '#FFB840'
+            }, {
+                id: '3',
+                name: 'Info',
+                color: '#EDEDED'
+            }, {
+                id: '4',
+                name: 'Low',
+                color: '#FFDB6B'
+            }, {
+                name: '6',
+                parent: '1',
+                value: 6,
+            }, {
+                name: 'B',
+                parent: '2',
+                value: 5,
+            }, {
+                name: 'C',
+                parent: '3',
+                value: 4,
+            }, {
+                name: 'D',
+                parent: '4',
+                value: 3,
+            }
+        ]
+    };
 
     public mockAreaChart = {
         categories: ['January', 'February', 'March'],
